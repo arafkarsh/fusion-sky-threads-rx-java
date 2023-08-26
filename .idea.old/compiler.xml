@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FusionSkyRx2" />
+        <module name="FusionColdRx2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="FusionSkyRx2" target="9" />
-    </bytecodeTargetLevel>
   </component>
 </project>
