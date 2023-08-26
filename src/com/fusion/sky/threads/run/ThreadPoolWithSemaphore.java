@@ -58,7 +58,6 @@ public class ThreadPoolWithSemaphore {
         // Shutdown the thread pool
         threadPool.shutdown();
         System.out.println(sLine);
-
     }
 
     static class Task implements Runnable {
