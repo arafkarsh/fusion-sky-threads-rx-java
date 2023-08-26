@@ -52,7 +52,7 @@ public class ThreadSafetyDemo {
         numberOfThreads = _numberOfThreads;
     }
 
-    public void threadNotSafeCall() {
+    public int threadNotSafeCall() {
         Thread[] threads = new Thread[numberOfThreads];
         // Spawn 10 threads to increment nonSafeCounter
         for (int i = 0; i < numberOfThreads; i++) {
@@ -71,11 +71,11 @@ public class ThreadSafetyDemo {
                 e.printStackTrace();
             }
         }
-
         System.out.println("<< Non-thread-safe counter value: " + nonSafeCounter);
+        return nonSafeCounter;
     }
 
-    public void threadSafeCall() {
+    public AtomicInteger threadSafeCall() {
         Thread[] threads = new Thread[numberOfThreads];
         // Spawn 10 threads to increment safeCounter
         for (int i = 0; i < numberOfThreads; i++) {
@@ -95,6 +95,7 @@ public class ThreadSafetyDemo {
             }
         }
         System.out.println("<< CAS Thread-safe counter value: " + safeCounter.get());
+        return safeCounter;
     }
 
     public void reset() {
@@ -113,10 +114,14 @@ public class ThreadSafetyDemo {
         for(int x=1; x<6; x++) {
             System.out.println(x+" >> Testing Atomic Operations on Primitive variables ============================= >>");
             // Run non-thread-safe counter
-            demo.threadNotSafeCall();
+            int ntsafe = demo.threadNotSafeCall();
             // Run thread-safe counter
-            demo.threadSafeCall();
-            System.out.println(x+" >> The difference in the counter shows integer operations are not thread safe === >>");
+            AtomicInteger tsafe = demo.threadSafeCall();
+            if(ntsafe == tsafe.get()) {
+                System.out.println(x+" >> You are lucky in this iterations! Luck doesn't favour you all the time !!! === >>");
+            } else {
+                System.out.println(x+" >> The difference in the counter shows integer operations are not thread safe === >>");
+            }
             Thread.sleep(3000);
             demo.reset();
         }

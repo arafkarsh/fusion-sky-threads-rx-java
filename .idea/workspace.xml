@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea.old/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/run/ThreadSafetyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/run/ThreadSafetyDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
