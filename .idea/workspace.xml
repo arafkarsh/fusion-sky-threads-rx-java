@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/run/ThreadSafetyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/run/ThreadSafetyDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +61,26 @@
       <recent name="com.fusion.sky.threads.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreadSafetyDemo">
+  <component name="RunManager" selected="Application.MonitorExample">
     <configuration name="FruitsRxExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.rx.fruit.run.FruitsRxExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fusion.sky.rx.fruit.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.run.MonitorExample" />
+      <module name="FusionSkyRx2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fusion.sky.threads.run.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,6 +116,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MonitorExample" />
         <item itemvalue="Application.ThreadSafetyDemo" />
         <item itemvalue="Application.FruitsRxExample" />
       </list>
