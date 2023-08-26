@@ -28,7 +28,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * @date:
  */
 public class SharedResourceReentrantLock {
-
     private final ReentrantLock lock = new ReentrantLock();
 
     public void criticalSection() {
@@ -40,5 +39,4 @@ public class SharedResourceReentrantLock {
             lock.unlock();
         }
     }
-
 }

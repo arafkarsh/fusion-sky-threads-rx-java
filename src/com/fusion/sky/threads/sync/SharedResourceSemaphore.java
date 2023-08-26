@@ -42,5 +42,4 @@ public class SharedResourceSemaphore {
             semaphore.release();
         }
     }
-
 }
