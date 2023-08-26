@@ -52,6 +52,10 @@ public class ThreadSafetyDemo {
         numberOfThreads = _numberOfThreads;
     }
 
+    /**
+     * Thread Not Safe Demo for Integer Arithmetic
+     * @return
+     */
     public int threadNotSafeCall() {
         Thread[] threads = new Thread[numberOfThreads];
         // Spawn 10 threads to increment nonSafeCounter
@@ -75,6 +79,10 @@ public class ThreadSafetyDemo {
         return nonSafeCounter;
     }
 
+    /**
+     * Thread Safe Demo for Integer Arithmetic
+     * @return
+     */
     public AtomicInteger threadSafeCall() {
         Thread[] threads = new Thread[numberOfThreads];
         // Spawn 10 threads to increment safeCounter
