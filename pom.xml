@@ -3,7 +3,7 @@
   <groupId>FusionSky</groupId>
   <artifactId>FusionSkyRx2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <description>Fusion Sky Examples of Rx Java 2</description>
+  <description>Fusion Sky Examples of Threads / Synchronization / Rx Java 2</description>
    <dependencies>
     <dependency>
     	<groupId>io.reactivex.rxjava2</groupId>
