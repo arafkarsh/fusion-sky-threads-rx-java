@@ -61,7 +61,7 @@
       <recent name="com.fusion.sky.threads.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountDownLatchExample">
+  <component name="RunManager" selected="Application.ReentrantLockWithConditionExample">
     <configuration name="CountDownLatchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.CountDownLatchExample" />
       <module name="FusionSkyRx2" />
@@ -75,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitsRxExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.rx.fruit.run.FruitsRxExample" />
+    <configuration name="MonitorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.run.MonitorExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fusion.sky.rx.fruit.run.*" />
+          <option name="PATTERN" value="com.fusion.sky.threads.run.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonitorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.run.MonitorExample" />
+    <configuration name="ReentrantLockWithConditionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.run.ReentrantLockWithConditionExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReentrantLockWithConditionExample" />
         <item itemvalue="Application.CountDownLatchExample" />
         <item itemvalue="Application.ThreadPoolWithSemaphore" />
         <item itemvalue="Application.MonitorExample" />
         <item itemvalue="Application.ThreadSafetyDemo" />
-        <item itemvalue="Application.FruitsRxExample" />
       </list>
     </recent_temporary>
   </component>
