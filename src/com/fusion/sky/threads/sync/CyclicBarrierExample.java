@@ -46,31 +46,7 @@ public class CyclicBarrierExample {
                 e.printStackTrace();
             }
             // Start a Parallel Process (Thread)
-            new Thread(new Task(i, cyclicBarrier)).start();
-        }
-    }
-
-    static class Task implements Runnable {
-        private int id;
-        private CyclicBarrier cyclicBarrier;
-
-        public Task(int id, CyclicBarrier cyclicBarrier) {
-            this.id = id;
-            this.cyclicBarrier = cyclicBarrier;
-        }
-
-        @Override
-        public void run() {
-            try {
-                System.out.println("Image Processor " + id + " is waiting");
-                cyclicBarrier.await();
-                System.out.println("Image Processor " + id + " is running");
-                Thread.sleep(3000);
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                System.out.println("Image Processor " + id + " is released finally");
-            }
+            new Thread(new TaskWithCyclicBarrier(i, cyclicBarrier)).start();
         }
     }
 }

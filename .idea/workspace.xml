@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CountDownLatchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CountDownLatchExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/ExternalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/ExternalServiceWithLatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/TaskWithCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/TaskWithCyclicBarrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CyclicBarrierExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CyclicBarrierExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <recent name="com.fusion.sky.threads.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExchangerExample">
+  <component name="RunManager" selected="Application.CyclicBarrierExample">
     <configuration name="CountDownLatchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.CountDownLatchExample" />
       <module name="FusionSkyRx2" />
@@ -144,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExchangerExample" />
         <item itemvalue="Application.CyclicBarrierExample" />
+        <item itemvalue="Application.ExchangerExample" />
         <item itemvalue="Application.ReentrantLockWithConditionExample" />
         <item itemvalue="Application.CountDownLatchExample" />
         <item itemvalue="Application.ThreadPoolWithSemaphore" />
