@@ -27,12 +27,12 @@ import java.util.concurrent.CountDownLatch;
  * @version:
  * @date:
  */
-public class ExternalService extends Thread {
+public class ExternalServiceWithLatch extends Thread {
     private final String name;
     private final int initTime;
     private final CountDownLatch latch;
 
-    public ExternalService(String name, int initTime, CountDownLatch latch) {
+    public ExternalServiceWithLatch(String name, int initTime, CountDownLatch latch) {
         this.name = name;
         this.initTime = initTime;
         this.latch = latch;

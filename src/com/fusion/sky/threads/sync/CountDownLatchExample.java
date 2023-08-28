@@ -37,9 +37,9 @@ public class CountDownLatchExample {
 
         System.out.println(sLine+"\nStarting All Services.");
         // Start service initialization threads
-        new ExternalService("DatabaseService", 5000, latch).start();
-        new ExternalService("CacheService", 3000, latch).start();
-        new ExternalService("LoggingService", 7000, latch).start();
+        new ExternalServiceWithLatch("DatabaseService", 5000, latch).start();
+        new ExternalServiceWithLatch("CacheService", 3000, latch).start();
+        new ExternalServiceWithLatch("LoggingService", 7000, latch).start();
 
         // Wait for all services to initialize
         System.out.println("Waiting for All Services to complete initialization.\n"+sLine);
