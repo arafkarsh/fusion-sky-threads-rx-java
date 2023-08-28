@@ -7,6 +7,10 @@
     <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/core/CompletableFutureExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/core/CompletableFutureExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/pool/ThreadPoolWithExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/pool/ThreadPoolWithExecutorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CountDownLatchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CountDownLatchExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/ReentrantLockWithConditionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/ReentrantLockWithConditionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/TaskWithCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/TaskWithCyclicBarrier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadWriteLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.ReadWriteLockExample" />
+    <configuration name="PhaserExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.PhaserExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
@@ -107,7 +111,7 @@
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fusion.sky.threads.core.*" />
+          <option name="PATTERN" value="com.fusion.sky.threads.pool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolWithThreadGroup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.pool.ThreadPoolWithThreadGroup" />
+    <configuration name="ThreadPoolWithSemaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.pool.ThreadPoolWithSemaphore" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fusion.sky.threads.core.*" />
+          <option name="PATTERN" value="com.fusion.sky.threads.pool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,9 +149,9 @@
       <list>
         <item itemvalue="Application.CompletableFutureExample" />
         <item itemvalue="Application.FutureExample" />
-        <item itemvalue="Application.ThreadPoolWithThreadGroup" />
+        <item itemvalue="Application.ThreadPoolWithSemaphore" />
         <item itemvalue="Application.ThreadPoolWithExecutorService" />
-        <item itemvalue="Application.ReadWriteLockExample" />
+        <item itemvalue="Application.PhaserExample" />
       </list>
     </recent_temporary>
   </component>

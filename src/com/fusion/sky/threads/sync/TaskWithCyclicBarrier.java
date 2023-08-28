@@ -18,15 +18,20 @@ public class TaskWithCyclicBarrier implements Runnable {
 
     @Override
     public void run() {
-        try {
-            System.out.println("Image Processor " + id + " is waiting");
-            cyclicBarrier.await();
-            System.out.println("Image Processor " + id + " is running");
-            Thread.sleep(3000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            System.out.println("Image Processor " + id + " is released finally");
+        // Cyclic Barrier will wait for all the threads to reach this point
+        while(true) {
+            try {
+                System.out.println("Image Processor " + id + " Loading Data...");
+                Thread.sleep(2000);
+                System.out.println("Image Processor " + id + " is waiting");
+                cyclicBarrier.await();
+                System.out.println("Image Processor " + id + " Processing Started...");
+                Thread.sleep(3000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                System.out.println("Image Processor " + id + " Processing Completed.");
+            }
         }
     }
 }

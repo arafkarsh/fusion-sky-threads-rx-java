@@ -111,7 +111,7 @@ public class ReentrantLockWithConditionExample {
      */
     public static void main(String[] args) {
         System.out.println("Reentrant Lock with Condition Example ===============");
-        ReentrantLockWithConditionExample demo = new ReentrantLockWithConditionExample(15);
+        ReentrantLockWithConditionExample demo = new ReentrantLockWithConditionExample(10);
 
         System.out.println("PRODUCER THREAD: Total Items : "+ demo.getTotalItems());
         // Producer Thread

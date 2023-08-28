@@ -55,6 +55,7 @@ public class ThreadPoolWithExecutorService {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         System.out.println("Shutting down the thread pool... ");
         executor.shutdown();
     }

@@ -30,28 +30,88 @@ import java.util.concurrent.ExecutionException;
  */
 public class CompletableFutureExample {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("CompletableFuture Example =======================================");
+
+        nonBlocking();
+
+        System.out.println("System Waiting for the Completable Future to Complete....");
+        Thread.sleep(10000);
+        System.out.println("System Processing Complete....");
+
+        // blocking();
+    }
+
+    public static void nonBlocking() {
+        CompletableFuture<Void> fetchUserAndOrders = CompletableFuture.supplyAsync(() -> {
+            try {
+                System.out.println("Fetching User ID... ");
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            int userId = 24;
+            System.out.println("Returning User ID = "+userId);
+            return userId; // User ID
+        }).exceptionally(ex -> {
+            System.out.println("Exception while fetching User ID: " + ex.getMessage());
+            return null;
+        }).thenApplyAsync(userId -> {
+            if (userId == null) throw new IllegalStateException("User ID can't be null");
+            String userName = "User_" + userId;
+            System.out.println("Returning User Name = "+userName);
+            return userName;
+        }).exceptionally(ex -> {
+            System.out.println("Exception while fetching User Name: " + ex.getMessage());
+            return null;
+        }).thenComposeAsync(userName -> {
+            if (userName == null) throw new IllegalStateException("User Name can't be null");
+            return CompletableFuture.supplyAsync(() -> {
+                try {
+                    System.out.println("Fetching Order for User Name = "+userName);
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                return "Orders for " + userName + ": [Order1, Order2]";
+            });
+        }).exceptionally(ex -> {
+            System.out.println("Exception while fetching User Orders: " + ex.getMessage());
+            return null;
+        }).thenAcceptAsync(finalResult -> {
+            if (finalResult != null) {
+                System.out.println("Result: " + finalResult);
+            }
+        });
+    }
+
+    public static void blocking() {
         System.out.println("Completable Future Example =======================================");
+        // Step 1: Fetch User ID
         CompletableFuture<Integer> fetchUserId = CompletableFuture.supplyAsync(() -> {
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            // Do database operations
             return 42; // User ID
         }).exceptionally(ex -> {
             System.out.println("Exception while fetching User ID: " + ex.getMessage());
             return null;
         });
 
+        // Step 2: Fetch User Name
         CompletableFuture<String> fetchUserName = fetchUserId.thenApplyAsync(userId -> {
             if (userId == null) throw new IllegalStateException("User ID can't be null");
+            // do some database operations.
             return "User_" + userId;
         }).exceptionally(ex -> {
             System.out.println("Exception while fetching User Name: " + ex.getMessage());
             return null;
         });
 
+        // Step 3: Fetch User Orders
         CompletableFuture<String> fetchUserOrders = fetchUserName.thenComposeAsync(userName -> {
             if (userName == null) throw new IllegalStateException("User Name can't be null");
             return CompletableFuture.supplyAsync(() -> {
@@ -67,6 +127,7 @@ public class CompletableFutureExample {
             return null;
         });
 
+        // get() should not be used in a Production Environment
         try {
             fetchUserOrders.thenAcceptAsync(finalResult -> {
                 if (finalResult != null) {
