@@ -61,20 +61,7 @@
       <recent name="com.fusion.sky.threads.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PhaserExample">
-    <configuration name="CountDownLatchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.CountDownLatchExample" />
-      <module name="FusionSkyRx2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fusion.sky.threads.sync.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ReadWriteLockExample">
     <configuration name="CyclicBarrierExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.CyclicBarrierExample" />
       <module name="FusionSkyRx2" />
@@ -114,6 +101,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReadWriteLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.ReadWriteLockExample" />
+      <module name="FusionSkyRx2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fusion.sky.threads.sync.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReentrantLockWithConditionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.ReentrantLockWithConditionExample" />
       <module name="FusionSkyRx2" />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadWriteLockExample" />
         <item itemvalue="Application.PhaserExample" />
         <item itemvalue="Application.CyclicBarrierExample" />
         <item itemvalue="Application.ExchangerExample" />
         <item itemvalue="Application.ReentrantLockWithConditionExample" />
-        <item itemvalue="Application.CountDownLatchExample" />
       </list>
     </recent_temporary>
   </component>
