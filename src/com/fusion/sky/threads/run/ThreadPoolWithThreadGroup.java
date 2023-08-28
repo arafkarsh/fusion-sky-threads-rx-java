@@ -46,7 +46,6 @@ public class ThreadPoolWithThreadGroup {
         t1.start();
         t2.start();
         t3.start();
-
         System.out.println("Thread Group Name: " + threadGroup.getName());
         System.out.println("Thread Group Active Count: " + threadGroup.activeCount());
 
@@ -54,6 +53,5 @@ public class ThreadPoolWithThreadGroup {
         Thread.sleep(1000);
         threadGroup.interrupt();
         System.out.println("Interrupted all threads in ThreadGroup: " + threadGroup.getName());
-
     }
 }
