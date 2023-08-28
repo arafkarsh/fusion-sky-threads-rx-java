@@ -30,23 +30,51 @@ import java.util.concurrent.ExecutionException;
  */
 public class CompletableFutureExample {
 
-    public static void main(String[] args) throws InterruptedException, ExecutionException {
+    public static void main(String[] args) {
         System.out.println("Completable Future Example =======================================");
-        CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
+        CompletableFuture<Integer> fetchUserId = CompletableFuture.supplyAsync(() -> {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            return 42;
+            return 42; // User ID
+        }).exceptionally(ex -> {
+            System.out.println("Exception while fetching User ID: " + ex.getMessage());
+            return null;
         });
-        // Do something else
-        System.out.println("Do something else...");
-        Thread.sleep(1000);
 
-        System.out.println("Get the Result from Future ...");
-        // Retrieve the result (blocking)
-        Integer result = future.get();
-        System.out.println("Result: " + result);
+        CompletableFuture<String> fetchUserName = fetchUserId.thenApplyAsync(userId -> {
+            if (userId == null) throw new IllegalStateException("User ID can't be null");
+            return "User_" + userId;
+        }).exceptionally(ex -> {
+            System.out.println("Exception while fetching User Name: " + ex.getMessage());
+            return null;
+        });
+
+        CompletableFuture<String> fetchUserOrders = fetchUserName.thenComposeAsync(userName -> {
+            if (userName == null) throw new IllegalStateException("User Name can't be null");
+            return CompletableFuture.supplyAsync(() -> {
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                return "Orders for " + userName + ": [Order1, Order2]";
+            });
+        }).exceptionally(ex -> {
+            System.out.println("Exception while fetching User Orders: " + ex.getMessage());
+            return null;
+        });
+
+        try {
+            fetchUserOrders.thenAcceptAsync(finalResult -> {
+                if (finalResult != null) {
+                    System.out.println("Result: " + finalResult);
+                }
+            }).get();
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 }
