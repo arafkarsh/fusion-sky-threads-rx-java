@@ -20,20 +20,16 @@
  */
 package com.fusion.sky.threads.run;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 /**
  * @author: Araf Karsh Hamid
  * @version:
  * @date:
  */
-public class ThreadPoolWithExecutorService {
+public class ThreadPoolWithThreadGroup {
 
-    public static void main(String[] args) {
-        System.out.println("Thread Pool with Executor Service =======================================");
-        ExecutorService executor = Executors.newFixedThreadPool(3); // 3 threads in pool
-
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("Thread Pool with Thread Group =======================================");
+        ThreadGroup threadGroup = new ThreadGroup("Fusion-Thread-Group");
         Runnable task = () -> {
             try {
                 System.out.println("Executing task: " + Thread.currentThread().getName());
@@ -42,20 +38,22 @@ public class ThreadPoolWithExecutorService {
                 e.printStackTrace();
             }
         };
-        System.out.println("Executing tasks in a thread pool of 3 threads.... ");
-        executor.execute(task);
-        executor.execute(task);
-        executor.execute(task);
+        System.out.println("Grouping the tasks.... ");
+        Thread t1 = new Thread(threadGroup, task, "Thread-1");
+        Thread t2 = new Thread(threadGroup, task, "Thread-2");
+        Thread t3 = new Thread(threadGroup, task, "Thread-3");
+        System.out.println("Start the tasks.... ");
+        t1.start();
+        t2.start();
+        t3.start();
 
-        try {
-            System.out.println("Main Thread Sleeping for 5 seconds... ");
-            Thread.sleep(5000);
-            System.out.println("Main Thread Waking up....  ");
+        System.out.println("Thread Group Name: " + threadGroup.getName());
+        System.out.println("Thread Group Active Count: " + threadGroup.activeCount());
 
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("Shutting down the thread pool... ");
-        executor.shutdown();
+        // Wait for some time and then interrupt all threads in the group
+        Thread.sleep(1000);
+        threadGroup.interrupt();
+        System.out.println("Interrupted all threads in ThreadGroup: " + threadGroup.getName());
+
     }
 }
