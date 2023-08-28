@@ -18,7 +18,7 @@
 
  * This program and the accompanying materials are licensed based on Apache 2 License.
  */
-package com.fusion.sky.threads.run;
+package com.fusion.sky.threads.core;
 
 /**
  * @author: Araf Karsh Hamid

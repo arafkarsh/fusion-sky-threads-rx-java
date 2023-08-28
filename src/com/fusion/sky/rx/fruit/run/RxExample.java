@@ -87,7 +87,7 @@ public class RxExample {
 	/**
 	 * This example flow squares the numbers from 1 to 10 on the computation Scheduler 
 	 * and consumes the results on the "main" thread (more precisely, the caller thread 
-	 * of blockingSubscribe). However, the lambda v -> v * v doesn't run in parallel for 
+	 * of blockingSubscribe). However, the lambda v -> v * v doesn't pool in parallel for
 	 * this flow; it receives the values 1 to 10 on the same computation thread one after
 	 *  the other.
 	 */
