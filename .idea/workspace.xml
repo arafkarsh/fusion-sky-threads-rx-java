@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="" />
+    <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +61,7 @@
       <recent name="com.fusion.sky.threads.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReadWriteLockExample">
+  <component name="RunManager" selected="Application.ThreadPoolWithExecutorService">
     <configuration name="CyclicBarrierExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.CyclicBarrierExample" />
       <module name="FusionSkyRx2" />
@@ -112,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReentrantLockWithConditionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.ReentrantLockWithConditionExample" />
+    <configuration name="ThreadPoolWithExecutorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.run.ThreadPoolWithExecutorService" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fusion.sky.threads.sync.*" />
+          <option name="PATTERN" value="com.fusion.sky.threads.run.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadPoolWithExecutorService" />
         <item itemvalue="Application.ReadWriteLockExample" />
         <item itemvalue="Application.PhaserExample" />
         <item itemvalue="Application.CyclicBarrierExample" />
         <item itemvalue="Application.ExchangerExample" />
-        <item itemvalue="Application.ReentrantLockWithConditionExample" />
       </list>
     </recent_temporary>
   </component>
