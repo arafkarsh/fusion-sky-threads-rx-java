@@ -40,7 +40,6 @@ public class CompletableFutureExample {
             }
             return 42;
         });
-
         // Do something else
         System.out.println("Do something else...");
         Thread.sleep(1000);
