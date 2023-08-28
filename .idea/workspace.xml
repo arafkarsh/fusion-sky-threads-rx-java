@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/run/MonitorExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/MonitorExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/run/ReentrantLockWithConditionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/ReentrantLockWithConditionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CyclicBarrierExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CyclicBarrierExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,7 @@
       <recent name="com.fusion.sky.threads.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CyclicBarrierExample">
+  <component name="RunManager" selected="Application.ExchangerExample">
     <configuration name="CountDownLatchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.CountDownLatchExample" />
       <module name="FusionSkyRx2" />
@@ -88,8 +91,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonitorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.run.MonitorExample" />
+    <configuration name="ExchangerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.ExchangerExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +105,7 @@
       </method>
     </configuration>
     <configuration name="ReentrantLockWithConditionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.run.ReentrantLockWithConditionExample" />
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.ReentrantLockWithConditionExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
@@ -142,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExchangerExample" />
         <item itemvalue="Application.CyclicBarrierExample" />
         <item itemvalue="Application.ReentrantLockWithConditionExample" />
         <item itemvalue="Application.CountDownLatchExample" />
         <item itemvalue="Application.ThreadPoolWithSemaphore" />
-        <item itemvalue="Application.MonitorExample" />
       </list>
     </recent_temporary>
   </component>
