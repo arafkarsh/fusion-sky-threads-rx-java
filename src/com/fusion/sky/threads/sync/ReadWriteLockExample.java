@@ -29,14 +29,11 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @date:
  */
 public class ReadWriteLockExample {
-
     private ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
     private int sharedResource = 0;
-
     public static void main(String[] args) {
         System.out.println("ReentrantReadWriteLock Example ========================================================");
         ReadWriteLockExample example = new ReadWriteLockExample();
-
         // Create multiple threads for reading and writing
         new Thread(() -> { example.writeResource((int) (Math.random() * 100)); }, "Writer-1").start();
         new Thread(() -> { example.readResource(); }, "Reader-1").start();
@@ -46,7 +43,6 @@ public class ReadWriteLockExample {
         new Thread(() -> { example.writeResource((int) (Math.random() * 100)); },"Writer-2").start();
         new Thread(() -> { example.readResource(); }, "Reader-4").start();
         new Thread(() -> { example.readResource(); }, "Reader-5").start();
-
     }
 
     public void readResource() {
