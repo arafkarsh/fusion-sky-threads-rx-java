@@ -80,7 +80,7 @@ public class RxExample {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} 
-		System.out.println(new Date()+"|Starting Background Process Done ... ");
+		System.out.println(new Date()+"|Background Process Done ... ");
 	}
 	
 	// Parallel Computation with Blocking Call
@@ -97,7 +97,7 @@ public class RxExample {
 		  .observeOn(Schedulers.computation())
 		  .map(v -> v * v)
 		  .blockingSubscribe(System.out::println);
-		System.out.println(new Date()+"|Starting Parallel Processing ... 1 .. Done!");
+		System.out.println(new Date()+"|Parallel Processing ... 1 .. Done!");
 	}
 	
 	/**
@@ -115,7 +115,7 @@ public class RxExample {
 		        .map(w -> w * w)
 		  )
 		  .blockingSubscribe(System.out::println);
-		System.out.println(new Date()+"|Starting Parallel Processing ... 2 .. Done!");
+		System.out.println(new Date()+"|Parallel Processing ... 2 .. Done!");
 	}
 	
 	/**
@@ -130,6 +130,6 @@ public class RxExample {
 		  .map(v -> v * v)
 		  .sequential()
 		  .blockingSubscribe(System.out::println);
-		System.out.println(new Date()+"|Starting Parallel Processing ... 3 .. Done!");
+		System.out.println(new Date()+"|Parallel Processing ... 3 .. Done!");
 	}
 }

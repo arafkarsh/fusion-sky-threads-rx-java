@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc0b38fe-bfbd-4143-8fe1-563f4b7427ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/core/CompletableFutureExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/core/CompletableFutureExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/pool/ThreadPoolWithExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/pool/ThreadPoolWithExecutorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CountDownLatchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/CountDownLatchExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/ReentrantLockWithConditionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/ReentrantLockWithConditionExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/TaskWithCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/threads/sync/TaskWithCyclicBarrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fusion/sky/rx/fruit/run/RxExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fusion/sky/rx/fruit/run/RxExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +62,26 @@
       <recent name="com.fusion.sky.threads.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CompletableFutureExample">
+  <component name="RunManager" selected="Application.RxExample">
     <configuration name="CompletableFutureExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.core.CompletableFutureExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fusion.sky.threads.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FruitsRxExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.rx.fruit.run.FruitsRxExample" />
+      <module name="FusionSkyRx2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fusion.sky.rx.fruit.run.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,25 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhaserExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.sync.PhaserExample" />
+    <configuration name="RxExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.rx.fruit.run.RxExample" />
       <module name="FusionSkyRx2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fusion.sky.threads.sync.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadPoolWithExecutorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fusion.sky.threads.pool.ThreadPoolWithExecutorService" />
-      <module name="FusionSkyRx2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fusion.sky.threads.pool.*" />
+          <option name="PATTERN" value="com.fusion.sky.rx.fruit.run.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RxExample" />
+        <item itemvalue="Application.FruitsRxExample" />
         <item itemvalue="Application.CompletableFutureExample" />
         <item itemvalue="Application.FutureExample" />
         <item itemvalue="Application.ThreadPoolWithSemaphore" />
-        <item itemvalue="Application.ThreadPoolWithExecutorService" />
-        <item itemvalue="Application.PhaserExample" />
       </list>
     </recent_temporary>
   </component>
